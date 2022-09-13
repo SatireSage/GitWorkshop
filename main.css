@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: #1f1f1f;
+  background-image: url(assets/gear-small.svg), url(assets/gear-big.svg);
+  background-position: left 0px, right 0px;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+.title {
+  font-size: 63px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+#listContainer {
+  background-color: #ffffff;
+}
+
+.item.header {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  border: none;
+  height: 120px;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 70px;
+  font-size: 40px;
+  font-weight: 500;
+  border-bottom: 6px solid #1f1f1f;
+  color: #1f1f1f;
+  text-align: left;
+}
+
+x-star-rating {
+  font-size: 48px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+x-star-rating > .star::after {
+  content: "\2606";
+  color: #777;
+}
+
+x-star-rating > .star.full::after {
+  content: "\2605";
+  color: #fd0;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.left {
+  width: 20%;
+  }
+
+  .right {
+  width: 80%;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
