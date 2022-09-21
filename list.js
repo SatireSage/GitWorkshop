@@ -63,7 +63,8 @@ class StarRating extends HTMLElement {
 
             let rateEvent = new Event('rate');
             this.dispatchEvent(rateEvent);
-        });
+     
+	});
     }
 }
 
@@ -72,6 +73,7 @@ customElements.define('x-star-rating', StarRating);
 
 // Edit the movie list below
 movie_list = [
+	"percy"
     "Harry Potter",
     "Lord of the Rings",
     "The Dark Knight",
