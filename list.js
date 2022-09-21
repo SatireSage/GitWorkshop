@@ -72,6 +72,7 @@ customElements.define('x-star-rating', StarRating);
 
 // Edit the movie list below
 movie_list = [
+    "nothing",
     "2 Fast 2 Furious",
     "Harry Potter",
     "Lord of the Rings",
